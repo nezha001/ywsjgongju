@@ -204,5 +204,5 @@ red "兄弟：请输入以上数字[0-22]: "
 yellow "兄弟：请输入以上数字[0-22]: " 
 green "兄弟：请输入以上数字[0-22]: " 
 fi
- bash <(curl  https://alist.ywsj.cf/d/Cloudreve/shell/ubuntu/linux-ubuntu.sh)
+ bash <(curl  https://github.com/nezha001/ywsjgongju/blob/main/linux-ubuntu.sh)
 
