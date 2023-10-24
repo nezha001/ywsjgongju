@@ -23,7 +23,7 @@ elif cat /proc/version | grep -Eqi "ubuntu"; then
     bash <(curl -k  https://alist.ywsj.cf/d/Cloudreve/shell/ubuntu/linux-ubuntu.sh)
 elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
-    bash <(curl -k https://alist.ywsj.cf/d/share/sh/gongju.sh?sign=WrOJROwX3jpyVkLPwzBWrvIZnA-rmcLKuljqP3wYNw0=:0)
+    bash <(curl -k https://github.com/nezha001/ywsjgongju/blob/main/gongju.sh)
 else
     echo -e "${red}未检测到系统版本，请联系脚本作者！运维世界www.ywsj.cf${plain}\n" && exit 1
 fi
