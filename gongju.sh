@@ -52,7 +52,7 @@ yellow() {
 }
 #安装青龙面板函数
 qlPanel() {
-rm -rf ./installqinglong.sh &&yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/qinglong/installqinglong.sh && chmod 777 ./installqinglong.sh && ./installqinglong.sh
+rm -rf ./installqinglong.sh &&yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installqinglong.sh && chmod 777 ./installqinglong.sh && ./installqinglong.sh
 }
 #安装xui脚本
 xuiinstall() {
