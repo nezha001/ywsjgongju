@@ -12,7 +12,7 @@ yellow() {
 read -p "请输入用户名(英文)如hk_yyzq：" NAM
 yum install lrzsz -y
 mkdir -p ~/openvpn && cd ~/openvpn
-yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/openvpn-install.sh && chmod 777 ./openvpn-install.sh && ./openvpn-install.sh $NAM
+yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/openvpn-install.sh && chmod 777 ./openvpn-install.sh && ./openvpn-install.sh $NAM
 red "恭喜你openVPN安装成功"
 red "你的用户名是$NAM"
 green "请进入~/ov/目录查看配置文件"
