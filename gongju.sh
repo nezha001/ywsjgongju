@@ -107,14 +107,14 @@ nezha() {
 }
 #port端口
 portone() {
- rm -rf ./portone.sh && yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/portone.sh && chmod 777 ./portone.sh && bash ./portone.sh
+ rm -rf ./portone.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/portone.sh && chmod 777 ./portone.sh && bash ./portone.sh
 }
 installmysql() {
-    yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/installmysql.sh && chmod 777 ./installmysql.sh && bash ./installmysql.sh
+    yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installmysql.sh && chmod 777 ./installmysql.sh && bash ./installmysql.sh
 }
 #centos一键安装umami
 installumami() {
-    rm -rf ./installumami.sh && yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/umami/installumami.sh && chmod 777 ./installumami.sh && ./installumami.sh
+    rm -rf ./installumami.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installumami.sh && chmod 777 ./installumami.sh && ./installumami.sh
 }
 #安装bench
 bench() {
@@ -122,11 +122,11 @@ yum -y install wget && wget -qO- bench.sh | bash
 }
 #ping工具
 ping() {
-  rm -rf ./ping.sh &&  yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/ping.sh && chmod 777 ./ping.sh && ./ping.sh
+  rm -rf ./ping.sh &&  yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/ping.sh && chmod 777 ./ping.sh && ./ping.sh
 }
 #安装openvpn
 installopenvpn() {
-rm -rf ./openvpn.sh && yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/openvpn.sh && chmod 777 ./openvpn.sh && ./openvpn.sh 
+rm -rf ./openvpn.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/openvpn.sh && chmod 777 ./openvpn.sh && ./openvpn.sh 
 rm -rf ./openvpn.sh
 rm -rf ./openvpn
 }
@@ -140,12 +140,12 @@ installaria2(){
 }
 #一键安装nmap工具
 installnmap() {
-     yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/linux/namp/nmap-7.92-1.x86_64.rpm && rpm -vhU nmap-7.92-1.x86_64.rpm && pwd 
+     yum -y install wget && wget http://152.67.98.47:8889/down/X6RWTue9VMmO && rpm -vhU nmap-7.92-1.x86_64.rpm && pwd 
      red "恭喜你nmap已经安装成功"
 }
 #巡检服务器
 xunjian() {
-   rm -rf ./runxujian.sh ; yum -y install wget ; wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/runxujian.sh ; chmod +x runxujian.sh ; ./runxujian.sh ; rm -rf ./runxujian.sh
+   rm -rf ./runxujian.sh ; yum -y install wget ; wget https://github.com/nezha001/ywsjgongju/blob/main/runxujian.sh ; chmod +x runxujian.sh ; ./runxujian.sh ; rm -rf ./runxujian.sh
 }
 #查看占用内存排名前10的应用
 chakan_mem() {
