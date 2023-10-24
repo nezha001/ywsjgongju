@@ -75,7 +75,7 @@ cewangsu() {
 }
 #安装docker与docker-compose
 installdocker() {
-   rm -rf ./centos7installdocker.sh ; yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/centos7installdocker.sh && chmod 777 ./centos7installdocker.sh && ./centos7installdocker.sh ; rm -rf ./centos7installdocker.sh
+   rm -rf ./centos7installdocker.sh ; yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/centos7installdocker.sh && chmod 777 ./centos7installdocker.sh && ./centos7installdocker.sh ; rm -rf ./centos7installdocker.sh
     yellow "docker与docker-compose安装成功"
 }
 #安装宝塔面板
