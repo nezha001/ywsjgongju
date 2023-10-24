@@ -92,7 +92,7 @@ installssh() {
 }
 #进入云大师
 intoyun() {
-    rm -rf ./yundashi.sh && yum -y install wget && wget https://alist.yyzq.cf/d/%20%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%9B%98/sh/yundashi.sh && chmod 777 ./yundashi.sh && bash ./yundashi.sh ; rm -rf ./yundashi.sh
+    rm -rf ./yundashi.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/yundashi.sh && chmod 777 ./yundashi.sh && bash ./yundashi.sh ; rm -rf ./yundashi.sh
 }
 #安装frp内网穿透
 installfrp() {
