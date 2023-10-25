@@ -25,3 +25,4 @@ red() {
 myip=$(curl ifconfig.me)
 green "你的ip为:$myip"
 yellow "root密码已经设置，请确保记住它并定期更改密码。"
+rm -rf centos7tossh.sh
