@@ -1,5 +1,14 @@
 #!/bin/bash
-# 获取IP地址及其信息
+#定义颜色
+green() {
+	echo -e "\033[32m\033[01m$1\033[0m"
+}
+red() {
+	echo -e "\033[31m\033[01m$1\033[0m"
+}
+yellow() {
+	echo -e "\033[33m\033[01m$1\033[0m"
+}
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误：${plain} 必须使用root用户运行此脚本！\n" && exit 1
 # check os
@@ -20,9 +29,8 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
 else
     echo -e "${red}未检测到系统版本，请联系脚本作者！${plain}\n" && exit 1
 fi
-
 arch=$(arch)
-
+# 获取IP地址及其信息
 IP4=$(curl -s4m8 https://ip.gs/json)
 IP6=$(curl -s6m8 https://ip.gs/json)
 WAN4=$(expr "$IP4" : '.*ip\":\"\([^"]*\).*')
@@ -40,16 +48,6 @@ fi
 if [ -z $WAN6 ]; then
 	IP6="当前VPS未检测到IPv6地址"
 fi
-#定义颜色
-green() {
-	echo -e "\033[32m\033[01m$1\033[0m"
-}
-red() {
-	echo -e "\033[31m\033[01m$1\033[0m"
-}
-yellow() {
-	echo -e "\033[33m\033[01m$1\033[0m"
-}
 #安装青龙面板函数
 qlPanel() {
 rm -rf ./installqinglong.sh &&yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installqinglong.sh && chmod 777 ./installqinglong.sh && ./installqinglong.sh
@@ -141,8 +139,18 @@ installaria2(){
 }
 #一键安装nmap工具
 installnmap() {
-     yum -y install wget && wget http://152.67.98.47:8889/down/X6RWTue9VMmO && rpm -vhU nmap-7.92-1.x86_64.rpm && pwd 
-     red "恭喜你nmap已经安装成功"
+     yum -y install wget 
+     wget https://github.com/nezha001/ywsjgongju/raw/main/nmap-7.92-1.x86_64.rpm 
+     if [ $? -ne 0 ]; then
+    red "下载nmap失败"
+     exit 1
+  fi
+    rpm -vhU nmap-7.92-1.x86_64.rpm 
+     if [ $? -ne 0 ]; then
+    red "安装nmap失败"
+    exit 1
+    red "恭喜你nmap已经安装成功"
+  fi
 }
 #巡检服务器
 xunjian() {
