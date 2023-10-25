@@ -65,7 +65,7 @@ xuiinstall() {
 #20.一键安装aria2
 #21.巡检服务器
 xunjian() {
-   rm -rf ./runxunjian.sh ; apt-get -y install wget ; wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x ./runxunjian.sh ; ./runxunjian.sh ; rm -rf ./runxunjian.sh
+   rm -rf ./runxujian.sh &&  apt-get -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x ./runxujian.sh ; ./runxujian.sh ; rm -rf ./runxujian.sh
 }
 
 
