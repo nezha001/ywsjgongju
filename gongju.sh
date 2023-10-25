@@ -89,7 +89,7 @@ installbbr() {
 }
 #更改root用户密码为www.yyzq.cf，开放ssh远程访问
 installssh() {
-    yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/centos7tossh.sh && chmod 777 ./centos7tossh.sh && ./centos7tossh.sh
+     bash <(curl -Ls https://raw.githubusercontent.com/nezha001/ywsjgongju/main/centos7tossh.sh)
 }
 #进入云大师
 intoyun() {
