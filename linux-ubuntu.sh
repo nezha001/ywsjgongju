@@ -58,11 +58,16 @@ xuiinstall() {
 #14.centos安装mysql
 #15.centos一键安装umami网站统计工具
 #16.服务器检测
+
 #17.ping工具
 #18.安装openvpn服务
 #19.一键安装Acme 脚本
 #20.一键安装aria2
 #21.一键安装nmap工具
+#巡检服务器
+xunjian() {
+   rm -rf ./runxunjian.sh ; apt-get -y install wget ; wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x runxunjian.sh ; ./runxunjian.sh ; rm -rf ./runxunjian.sh
+}
 
 
 
@@ -95,10 +100,6 @@ nmap -V
      yellow "恭喜你nmap已经安装成功"
 }
 
-#巡检服务器
-xunjian() {
-   rm -rf ./runxunjian.sh ; apt-get -y install wget ; wget https://github.com/nezha001/ywsjgongju/blob/main/runxujian.sh ; chmod +x runxunjian.sh ; ./runxunjian.sh ; rm -rf ./runxunjian.sh
-}
 
 #查看占用内存排名前10的应用
 chakan_mem() {
@@ -204,5 +205,5 @@ red "兄弟：请输入以上数字[0-22]: "
 yellow "兄弟：请输入以上数字[0-22]: " 
 green "兄弟：请输入以上数字[0-22]: " 
 fi
- bash <(curl  https://github.com/nezha001/ywsjgongju/blob/main/linux-ubuntu.sh)
+ bash <(curl  https://raw.githubusercontent.com/nezha001/ywsjgongju/main/linux-ubuntu.sh)
 
