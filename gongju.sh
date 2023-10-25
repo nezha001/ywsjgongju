@@ -286,5 +286,5 @@ red "兄弟：请输入以上数字[0-23]: "
 yellow "兄弟：请输入以上数字[0-23]: " 
 green "兄弟：请输入以上数字[0-23]: " 
 fi
-bash <(curl -Ls https://raw.githubusercontent.com/nezha001/ywsjgongju/main/linuxtools.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/nezha001/ywsjgongju/main/gongju.sh)
 
