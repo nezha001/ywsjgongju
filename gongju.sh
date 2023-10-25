@@ -180,8 +180,8 @@ echo -e "
  运维世界: https://www.ywsj.cf 
  有云转晴: https://www.yyzq.cf 
  有云导航: https://hao123.yyzq.cf 
- 版本号:5.6.0
- 编写日期:20230421\033[0m
+ 版本号:6.6.0
+ 编写日期:20231025\033[0m
  =====================================================" 
  echo -e "\033[32m1.安装wget,git,bash-completion,net-tools,curl,make
 2.查看本机ipv4公网IP
@@ -261,6 +261,8 @@ elif [  $num  == 23 ]; then
 24live
 elif [  $num  == 0  ]; then
 red " 我们下次再见，拜拜"
+red " 欢迎访问运维世界"
+red " https://www.ywsj.cf"
 exit
 else
 red "兄弟：请输入以上数字[0-23]: " 
