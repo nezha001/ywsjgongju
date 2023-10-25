@@ -150,7 +150,6 @@ installnmap() {
     red "安装nmap失败"
     exit 1
     red "恭喜你nmap已经安装成功"
-  fi
 }
 #巡检服务器
 xunjian() {
