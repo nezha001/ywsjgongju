@@ -6,7 +6,13 @@ sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 
 # 提示用户设置密码
-read -p "请输入新的root密码: " root_password
+echo -n "请输入新的root密码: "
+stty -echo  # 关闭回显
+read root_password
+stty echo  # 打开回显
+echo  # 换行
+
+# 设置root密码
 echo "root:$root_password" | chpasswd
 
 # 重启SSH服务
@@ -20,8 +26,9 @@ yellow() {
   echo -e "\033[33m\033[01m$1\033[0m"
 }
 red() {
-	echo -e "\033[31m\033[01m$1\033[0m"
+  echo -e "\033[31m\033\01m$1\033[0m"
 }
+
 myip=$(curl ifconfig.me)
 green "你的ip为:$myip"
 yellow "root密码已经设置，请确保记住它并定期更改密码。"
