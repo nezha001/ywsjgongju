@@ -52,7 +52,7 @@ yellow() {
 }
 #安装青龙面板函数
 qlPanel() {
-rm -rf ./installqinglong.sh &&yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installqinglong.sh && chmod 777 ./installqinglong.sh && ./installqinglong.sh
+rm -rf ./installqinglong.sh &&yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installqinglong.sh && chmod 777 ./installqinglong.sh && ./installqinglong.sh
 }
 #安装xui脚本
 xuiinstall() {
@@ -75,7 +75,7 @@ cewangsu() {
 }
 #安装docker与docker-compose
 installdocker() {
-   rm -rf ./centos7installdocker.sh ; yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/centos7installdocker.sh && chmod 777 ./centos7installdocker.sh && ./centos7installdocker.sh ; rm -rf ./centos7installdocker.sh
+   rm -rf ./centos7installdocker.sh ; yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/centos7installdocker.sh && chmod 777 ./centos7installdocker.sh && ./centos7installdocker.sh ; rm -rf ./centos7installdocker.sh
     yellow "docker与docker-compose安装成功"
 }
 #安装宝塔面板
@@ -88,11 +88,11 @@ installbbr() {
 }
 #更改root用户密码为www.yyzq.cf，开放ssh远程访问
 installssh() {
-    yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/centos7tossh.sh && chmod 777 ./centos7tossh.sh && ./centos7tossh.sh
+    yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/centos7tossh.sh && chmod 777 ./centos7tossh.sh && ./centos7tossh.sh
 }
 #进入云大师
 intoyun() {
-    rm -rf ./yundashi.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/yundashi.sh && chmod 777 ./yundashi.sh && bash ./yundashi.sh ; rm -rf ./yundashi.sh
+    rm -rf ./yundashi.sh && yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/yundashi.sh && chmod 777 ./yundashi.sh && bash ./yundashi.sh ; rm -rf ./yundashi.sh
 }
 #安装frp内网穿透
 installfrp() {
@@ -107,14 +107,14 @@ nezha() {
 }
 #port端口
 portone() {
- rm -rf ./portone.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/portone.sh && chmod 777 ./portone.sh && bash ./portone.sh
+ rm -rf ./portone.sh && yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/portone.sh && chmod 777 ./portone.sh && bash ./portone.sh
 }
 installmysql() {
-    yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installmysql.sh && chmod 777 ./installmysql.sh && bash ./installmysql.sh
+    yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installmysql.sh && chmod 777 ./installmysql.sh && bash ./installmysql.sh
 }
 #centos一键安装umami
 installumami() {
-    rm -rf ./installumami.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/installumami.sh && chmod 777 ./installumami.sh && ./installumami.sh
+    rm -rf ./installumami.sh && yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installumami.sh && chmod 777 ./installumami.sh && ./installumami.sh
 }
 #安装bench
 bench() {
@@ -122,11 +122,11 @@ yum -y install wget && wget -qO- bench.sh | bash
 }
 #ping工具
 ping() {
-  rm -rf ./ping.sh &&  yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/ping.sh && chmod 777 ./ping.sh && ./ping.sh
+  rm -rf ./ping.sh &&  yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/ping.sh && chmod 777 ./ping.sh && ./ping.sh
 }
 #安装openvpn
 installopenvpn() {
-rm -rf ./openvpn.sh && yum -y install wget && wget https://github.com/nezha001/ywsjgongju/blob/main/openvpn.sh && chmod 777 ./openvpn.sh && ./openvpn.sh 
+rm -rf ./openvpn.sh && yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/openvpn.sh && chmod 777 ./openvpn.sh && ./openvpn.sh 
 rm -rf ./openvpn.sh
 rm -rf ./openvpn
 }
@@ -145,7 +145,7 @@ installnmap() {
 }
 #巡检服务器
 xunjian() {
-   rm -rf ./runxujian.sh ; yum -y install wget ; wget https://github.com/nezha001/ywsjgongju/blob/main/runxujian.sh ; chmod +x runxujian.sh ; ./runxujian.sh ; rm -rf ./runxujian.sh
+   rm -rf ./runxujian.sh ; yum -y install wget ; wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x runxujian.sh ; ./runxujian.sh ; rm -rf ./runxujian.sh
 }
 #查看占用内存排名前10的应用
 chakan_mem() {
