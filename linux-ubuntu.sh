@@ -63,10 +63,9 @@ xuiinstall() {
 #18.安装openvpn服务
 #19.一键安装Acme 脚本
 #20.一键安装aria2
-#21.一键安装nmap工具
-#巡检服务器
+#21.巡检服务器
 xunjian() {
-   rm -rf ./runxunjian.sh ; apt-get -y install wget ; wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x runxunjian.sh ; ./runxunjian.sh ; rm -rf ./runxunjian.sh
+   rm -rf ./runxunjian.sh ; apt-get -y install wget ; wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/runxujian.sh ; chmod +x ./runxunjian.sh ; ./runxunjian.sh ; rm -rf ./runxunjian.sh
 }
 
 
