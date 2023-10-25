@@ -139,17 +139,22 @@ installaria2(){
 }
 #一键安装nmap工具
 installnmap() {
-     yum -y install wget 
-     wget https://github.com/nezha001/ywsjgongju/raw/main/nmap-7.92-1.x86_64.rpm 
-     if [ $? -ne 0 ]; then
+  yum -y install wget
+  wget https://github.com/nezha001/ywsjgongju/raw/main/nmap-7.92-1.x86_64.rpm
+  if [ $? -ne 0 ]; then
     red "下载nmap失败"
-     exit 1
+    exit 1
   fi
-    rpm -vhU nmap-7.92-1.x86_64.rpm 
-     if [ $? -ne 0 ]; then
+
+  rpm -vhU nmap-7.92-1.x86_64.rpm
+  if [ $? -ne 0 ]; then
     red "安装nmap失败"
     exit 1
-    red "恭喜你nmap已经安装成功"
+  else
+    green "恭喜你，nmap已经安装成功"
+  fi
+
+  rm -f nmap-7.92-1.x86_64.rpm
 }
 #巡检服务器
 xunjian() {
