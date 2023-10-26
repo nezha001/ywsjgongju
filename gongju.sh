@@ -58,7 +58,7 @@ xuiinstall() {
 }
 #安装wget,git,bash-completion,net-tools
 installgongj() {
-    yum -y install wget git bash-completion net-tools curl make jq vim
+    yum -y install wget git bash-completion net-tools curl make jq vim lrzsz
     bash <(curl -Ls https://raw.githubusercontent.com/nezha001/ywsjgongju/main/gongju.sh)
 }
 #查看本机ipv4公网IP
