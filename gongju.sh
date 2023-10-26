@@ -195,7 +195,7 @@ echo -e "
  版本号:6.6.0
  编写日期:20231025\033[0m
  =====================================================" 
- echo -e "\033[32m1.安装wget,git,bash-completion,net-tools,curl,make
+ echo -e "\033[32m1.安装 wget git bash-completion net-tools curl make jq vim lrzsz工具
 2.查看本机ipv4公网IP
 3.测网速
 4.安装docker与docker-compose
