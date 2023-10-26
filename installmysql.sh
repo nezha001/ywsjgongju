@@ -12,5 +12,5 @@ systemctl  enable mysqld
 netstat  -utnlp  | grep  3306
 ps -C mysqld
 grep password  /var/log/mysqld.log | tail -1
-
+rm -rf mysql-5.7.17.tar
 
