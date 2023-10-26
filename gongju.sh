@@ -109,7 +109,10 @@ portone() {
  rm -rf ./portone.sh && yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/portone.sh && chmod 777 ./portone.sh && bash ./portone.sh
 }
 installmysql() {
-    yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installmysql.sh && chmod 777 ./installmysql.sh && bash ./installmysql.sh
+    yum -y install wget 
+    rm -rf installmysql.sh
+    bash <(curl -Ls https://raw.githubusercontent.com/nezha001/ywsjgongju/main/installmysql.sh)
+    rm -rf installmysql.sh
 }
 #centos一键安装umami
 installumami() {
