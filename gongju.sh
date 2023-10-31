@@ -77,9 +77,9 @@ installdocker() {
    rm -rf ./centos7installdocker.sh ; yum -y install wget && wget https://raw.githubusercontent.com/nezha001/ywsjgongju/main/centos7installdocker.sh && chmod 777 ./centos7installdocker.sh && ./centos7installdocker.sh ; rm -rf ./centos7installdocker.sh
     yellow "docker与docker-compose安装成功"
 }
-#安装宝塔面板
+#安装宝塔国际板
 installbt() {
-    yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+    yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh aapanel
 }
 #安装BBR加速
 installbbr() {
@@ -202,7 +202,7 @@ echo -e "
 2.查看本机ipv4公网IP
 3.测网速
 4.安装docker与docker-compose
-5.安装宝塔面板
+5.安装宝塔国际版(免手机号验证)
 6.安装BBR加速
 7.XUI一键脚本安装
 8.更改root用户密码并开放ssh远程访问(自己注意风险)
