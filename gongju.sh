@@ -172,7 +172,10 @@ ps aux --sort=-%mem | head -n 11
 24live (){
     bash <(curl https://alist.ywsj.cf/d/Cloudreve/shell/live/24live.sh)
 }
-
+# 查快递
+query_delivery () {
+ bash <(curl https://raw.githubusercontent.com/nezha001/ywsjgongju/main/query_delivery.sh)
+}
 mylinux=$(cat /etc/redhat-release)
 #内存使用率
 my_mem=$(free | awk '/^Mem:/{print $3/$2 * 100.0 "%"}')
@@ -196,7 +199,7 @@ echo -e "
  有云转晴: https://www.yyzq.cf 
  有云导航: https://hao123.yyzq.cf 
  版本号:6.6.0
- 编写日期:20231025\033[0m
+ 编写日期:20231101\033[0m
  =====================================================" 
  echo -e "\033[32m1.安装 wget git bash-completion net-tools curl make jq vim lrzsz工具
 2.查看本机ipv4公网IP
@@ -221,6 +224,7 @@ echo -e "
 21.巡检服务器
 22.查看占用内存排名前10的应用
 23.VPS推流直播脚本
+24.查快递
 0.退出脚本\033[0m
 ======================================================"
 rm -rf ./gongju.sh.*
@@ -274,6 +278,8 @@ elif [  $num  == 22 ]; then
 chakan_mem
 elif [  $num  == 23 ]; then
 24live
+elif [  $num  == 24 ]; then
+query_delivery
 elif [  $num  == 0  ]; then
 red " 我们下次再见，拜拜"
 red " 欢迎访问运维世界"
