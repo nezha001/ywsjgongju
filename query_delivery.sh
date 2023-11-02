@@ -1,5 +1,7 @@
 #!/bin/bash
 
+yum -y install curl jq > dev/null
+
 while true; do
   # 提示用户输入快递号
   read -p "请输入快递号 (或输入 'exit' 退出): " tracking_number
