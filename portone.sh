@@ -15,6 +15,6 @@ systemctl restart firewalld
 read -p "请输入要开启的端口号:" port34
 firewall-cmd --zone=public --add-port=$port34/tcp --permanent
 systemctl restart firewalld
-read -p "请输入要关闭的端口号:" port35
+read -p "请输入要关闭的端口号(ctrl+c退出):" port35
 firewall-cmd --zone=public--remove-port=$port35/tcp --permanent
 systemctl restart firewalld
